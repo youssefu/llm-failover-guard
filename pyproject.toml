@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-failover-guard"
+version = "0.2.0"
+description = "Zero-dependency multi-provider LLM key failover router and automated GitHub PR security triage CLI for open-source maintainers."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Youssef Lebkhachi", email = "lbkyoussef@gmail.com"}
+]
+requires-python = ">=3.9"
+keywords = ["openai", "codex", "llm-router", "failover", "security-scanner", "oss-maintainer", "github-actions"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+llm-failover-guard = "llm_failover_guard:main"
+
+[project.urls]
+Homepage = "https://github.com/youssefu/llm-failover-guard"
+Repository = "https://github.com/youssefu/llm-failover-guard"
+Issues = "https://github.com/youssefu/llm-failover-guard/issues"
